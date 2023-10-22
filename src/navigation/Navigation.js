@@ -30,10 +30,10 @@ function Navigation() {
     return (
         <NavigationContainer>
             <Stack.Navigator
-                initialRouteName="TabNavigator"
+                initialRouteName="LoginEmail"
                 screenOptions={{ headerShown: false }}>
                  <Stack.Screen name="Splash" component={Splash} />
-                 <Stack.Screen name="Intro" component={Intro} />
+                 {/* <Stack.Screen name="Intro" component={Intro} /> */}
                 <Stack.Screen name = "LoginEmail" component = {LoginEmail}/>
                 <Stack.Screen name = "CreateAccount" component = {CreateAccount}/>
                 <Stack.Screen name = "FbFriends" component = {FbFriends}/>
