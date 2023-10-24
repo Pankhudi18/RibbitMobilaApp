@@ -16,6 +16,12 @@ import RibbitSearch from '../screens/RibbitSearch/RibbitSearch';
 import ForYou from '../screens/RibbitSearch/ForYou';
 import Accounts from '../screens/RibbitSearch/Accounts';
 import Reels from '../screens/RibbitSearch/Reels';
+import Audio from '../screens/RibbitSearch/Audio';
+import Tags from '../screens/RibbitSearch/Tags';
+import Location from '../screens/RibbitSearch/Location';
+import Notification from '../screens/RibbitNotification/Notification';
+import Challenges from '../screens/RibbitChallenges/Challenges';
+import takeSurvey from '../screens/RibbitTakeSurvey/takeSurvey';
 
 
 
@@ -30,7 +36,7 @@ function Navigation() {
     return (
         <NavigationContainer>
             <Stack.Navigator
-                initialRouteName="LoginEmail"
+                initialRouteName="Notification"
                 screenOptions={{ headerShown: false }}>
                  <Stack.Screen name="Splash" component={Splash} />
                  {/* <Stack.Screen name="Intro" component={Intro} /> */}
@@ -45,6 +51,12 @@ function Navigation() {
                 <Stack.Screen name = "ForYou" component = {ForYou}/>
                 <Stack.Screen name = "Accounts" component = {Accounts}/>
                 <Stack.Screen name = "Reels" component = {Reels}/>
+                <Stack.Screen name = "Audio" component = {Audio}/>
+                <Stack.Screen name = "Tags" component = {Tags}/>
+                <Stack.Screen name = "Location" component = {Location}/>
+                <Stack.Screen name = "Challenges" component = {Challenges}/>
+                <Stack.Screen name = "takeSurvey" component = {takeSurvey}/>
+                <Stack.Screen name = "Notification" component = {Notification}/>
                  {/* <Stack.Screen name="HomeScreen" component={HomeScreen} /> */}
                  
 
